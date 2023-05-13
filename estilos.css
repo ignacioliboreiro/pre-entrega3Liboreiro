@@ -33,7 +33,7 @@ dl, ol, ul {
   margin-top: 15px;
 }
 
-main {
+.main-index {
   width: 100%;
   height: 100vh;
   background-color: #333333;
@@ -478,4 +478,16 @@ input {
   .contacto-h2 {
     margin-top: 0px;
   }
+}
+.card {
+  display: inline-block;
+  border: 2px solid black;
+  margin: 30px;
+}
+
+.main-remera {
+  background-image: linear-gradient(to right, #d8d0d4, #c6c0c4, #b3b0b4, #a2a0a3, #919093, #828284, #747475, #666666, #565656, #464646, #373737, #282828);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=estilos.css.map */

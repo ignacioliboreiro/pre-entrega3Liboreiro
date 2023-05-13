@@ -44,7 +44,7 @@ dl, ol, ul {
 
 
 
-main{
+.main-index{
     width: 100%;
     height: 100vh;
     background-color: #333333;
@@ -486,3 +486,19 @@ input{
         margin-top: 0px ;
     }
 }
+
+//aca esta la pagina de remeras//
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.main-remera{
+    background-image: $color-de-fondo;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
