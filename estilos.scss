@@ -1,3 +1,11 @@
+//paleta de colores//
+ //background-image*//
+$color-de-fondo: linear-gradient(to right, #d8d0d4, #c6c0c4, #b3b0b4, #a2a0a3, #919093, #828284, #747475, #666666, #565656, #464646, #373737, #282828);
+//font-family//
+$funete-de-h2:Verdana, Geneva, Tahoma, sans-serif;
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +18,6 @@
     background-color: #363434ed;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: px ;
     font-weight: bold;
 }
 
@@ -100,7 +107,7 @@ h2{
 
 .nosotros{
     width: 100%;
-    background-image: linear-gradient(to right, #d8d0d4, #c6c0c4, #b3b0b4, #a2a0a3, #919093, #828284, #747475, #666666, #565656, #464646, #373737, #282828);
+    background-image:$color-de-fondo;
     display: flex;
     padding-left: 0px;
 }
