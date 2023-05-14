@@ -243,6 +243,8 @@ footer a {
   background-size: cover;
   background-position: center;
   justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 form {
@@ -408,6 +410,8 @@ input {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
   }
   form {
     width: 350px;
@@ -497,6 +501,10 @@ input {
   }
   .contacto-h2 {
     margin-top: 0px;
+  }
+  .main-contacto {
+    display: flex;
+    justify-content: center;
   }
 }
 .card {
