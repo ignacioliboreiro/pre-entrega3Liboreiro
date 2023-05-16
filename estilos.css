@@ -376,8 +376,39 @@ input {
   fill: #0E1822;
 }
 
-.main-pantalones {
+.card {
+  display: inline-block;
+  height: 500px;
+  margin-left: 135px;
+  justify-content: center;
+}
+.card .card-title {
+  font-size: 30px;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  height: 300px;
+}
+
+.imagen1 {
+  height: 335px;
+}
+
+.main-pantalones, .main-zapatillas {
   background-image: linear-gradient(to right, #d8d0d4, #c6c0c4, #b3b0b4, #a2a0a3, #919093, #828284, #747475, #666666, #565656, #464646, #373737, #282828);
+  height: 100vh;
+}
+
+.card {
+  display: inline-block;
+  height: 500px;
+  margin-left: 135px;
+  justify-content: center;
+}
+.card .card-title {
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -454,7 +485,7 @@ input {
     font-size: 30px;
     transition: all 0.9s;
   }
-  .main-remera, .main-zapatillas-H {
+  .main-remera {
     background-image: linear-gradient(to right, #d8d0d4, #c6c0c4, #b3b0b4, #a2a0a3, #919093, #828284, #747475, #666666, #565656, #464646, #373737, #282828);
     width: 100%;
   }

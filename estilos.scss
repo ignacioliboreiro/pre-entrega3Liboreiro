@@ -381,15 +381,49 @@ input{
 
 // aca esta la pagina de las zapatillas de hombres//
 
-.main-zapatillas-H{
-    @extend .main-remera;
+.main-zapatillas{
+    @extend .main-pantalones;
+}
+.card{
+    display: inline-block;
+    height: 500px;
+    margin-left: 135px;
+    justify-content: center;
+
+    .card-title{
+        font-size: 30px;
+    }
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    height: 300px;
+}
+
+.imagen1{
+    height: 335px;
 }
 
 //aca para abjao la pagina de pantalones//
 
 .main-pantalones{
     background-image: $color-de-fondo;
+    height: 100vh;
 }
+
+.card{
+    display: inline-block;
+    height: 500px;
+    margin-left: 135px;
+    justify-content: center;
+
+    .card-title{
+        font-size: 30px;
+    }
+}
+
+
 
 @media only screen and (max-width:480px) {
     .galeria{
