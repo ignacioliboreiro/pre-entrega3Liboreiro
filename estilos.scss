@@ -381,48 +381,177 @@ input{
 
 // aca esta la pagina de las zapatillas de hombres//
 
-.main-zapatillas{
-    @extend .main-pantalones;
-}
-.card{
-    display: inline-block;
-    height: 500px;
-    margin-left: 135px;
-    justify-content: center;
-
-    .card-title{
-        font-size: 30px;
-    }
+.body-zapas{
+    background-image: $color-de-fondo;
 }
 
-.card-img, .card-img-top {
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
+.container-title{
+    padding: 30px;
+    margin-bottom: 50px;
+    background-image: $color-de-fondo;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.img1{
+    max-width: 100%;
+    height: 100%;
+    border: 5px solid black;
+}
+
+.img{
+    width: 100%;
     height: 300px;
 }
 
-.imagen1{
-    height: 335px;
+.main-zapatillas{
+    display: flex;
+    gap: 30px;
+    margin: 40px;
 }
 
-//aca para abjao la pagina de pantalones//
+.container-img{
+    background-color: #f7f7f9;
+flex: 1;
+}
+.container-info-producto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-.main-pantalones{
-    background-image: $color-de-fondo;
-    height: 100vh;
+.container-precio{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+}
+
+.container-precio span{
+    font-size: 24px;
+}
+
+.container-detalles-productos{
+    padding: 30px 0;
+}
+
+.form.grup{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form.grup label{
+    width: 100px;
+    color: #222;
+    font-weight: 700;
+}
+
+.form.grup select{
+    width: 300px;
+    border: none;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+}
+
+select {
+    word-wrap: normal;
+    background-color: rgba(171, 171, 171, 0.761);
+    color: rgb(255, 255, 255);
+}
+
+.texto-descripcion p{
+    color: white;
+}
+
+.container-aggregar-al-carro{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container-quantity{
+    position: relative;
+}
+
+.input-quantity{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    font-weight: 500;
+}
+
+.container-aggregar-al-carrito{
+    border: none;
+    background-color: #252525;
+    padding: 10px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-aggregar-al-carrito:hover{
+    background-color: #6689ab;
+}
+
+.container-social{
+    font-size: 25px;
+}
+
+.productos-relacionados h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-lista-productos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin: 30px;
 }
 
 .card{
-    display: inline-block;
-    height: 500px;
-    margin-left: 135px;
-    justify-content: center;
-
-    .card-title{
-        font-size: 30px;
-    }
+    cursor: pointer;
+    transition: all 0.9s;
+    border: 5px solid black;
 }
 
+.card:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+}
+
+.card-img{
+    background: transparent;
+    margin-top: 15px;
+}
+
+.informacion-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-de-producto h4{
+    color: inherit;
+    font-weight: inherit;
+    font-size: 25px;
+}
+
+.texto-de-producto{
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+    
+}
 
 
 @media only screen and (max-width:480px) {
@@ -492,20 +621,6 @@ input{
         padding: 20px;
         
     }
-    //de aca para abajo remeras de hombres//
-    .card{
-        width: 280px;
-        display: inline-block;
-        border: 2px solid black;
-        margin: 20px;
-        font-size: 30px;
-        transition: all 0.9s;
-    }
-    .main-remera{
-        background-image: $color-de-fondo;
-        width: 100%;
-    }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

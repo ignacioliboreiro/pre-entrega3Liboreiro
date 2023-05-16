@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../estilos.css">
     <title>Zapatillas</title>
 </head>
-<body>
+<body class="body-zapas">
     <nav class="navbar navbar-expand-lg navbar-light  header">
         <!-- Brand/logo -->
         <a class="navbar-brand" href="#">
@@ -41,32 +41,120 @@
         </ul>
         </div>
     </nav>
+    <div class="container-title">Zapatillas</div>
     <main class="main-zapatillas">
-        <div class="card" style="width: 400px;">
-            <img class="card-img-top imagen1" src="../img/nike2air.jpg" alt="Card image">
-            <div class="card-body">
-            <h4 class="card-title">Zapatillas Ari Nike blancas</h4>
-            <p class="card-text">Talle: del 38 al 45</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+<div class="container-img">
+    <img src="../img/pag-zapas-venta.jpg.jpg" class="img1">
+</div>
+    <div class="container-info-producto">
+        <div class="container-precio">
+            <span>$29.500</span>
+        </div>
+        <div class="container-detalles-productos">
+            <div class="form-group">
+                <label for="color">Color</label>
+                <select name="" id="">
+                    <option disabled selected value="">
+                        Elegi un color
+                    </option>
+                    <option value="">rojo</option>
+                    <option value="">blancas</option>
+                    <option value="">verde</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Talle</label>
+                <select name="" id="">
+                    <option disabled selected value="">
+                        Elegi un talle
+                    </option>
+                    <option value="">37</option>
+                    <option value="">38</option>
+                    <option value="">40</option>
+                    <option value="">42</option>
+                    <option value="">44</option>
+                </select>
             </div>
         </div>
-        <div class="card" style="width: 400px;">
-            <img class="card-img-top" src="../img/pag-zapas.jpg" alt="Card image">
-            <div class="card-body">
-            <h4 class="card-title">Nike Air Max 1 Watermelon</h4>
-            <p class="card-text">Talle del 37 al 44</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+        <div class="container-aggregar-al-carro">
+            <div class="container-quantity">
+                <input type="number" name=""
+                id="" placeholder="1" min="1" max="10" class="input-contador">
+            </div>
+            <button class="container-aggregar-al-carrito">agregar al carrito</button>
+        </div>
+        <div class="container-descripcion">
+            <div class="titulo-descripcion">
+                <h3>Descripcion</h3>
             </div>
         </div>
-        <div class="card" style="width: 400px;">
-            <img class="card-img-top" src="../img/nike1.jpg" alt="Card image">
-            <div class="card-body">
-            <h4 class="card-title">Remera Blanca Nike M Nsw SS Summer </h4>
-            <p class="card-text">Remera de verano Talle M</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+        <div class="texto-descripcion">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti deserunt beatae atque aliquam sit eum fugit cum exercitationem nam dolorem rem amet consectetur voluptas eligendi ab quo, aut veniam cupiditate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam suscipit quasi, sit odit officia ex molestias. Illo, quidem. Beatae labore esse dolore quis natus ea aut quas omnis soluta nostrum!</p>
+        </div>
+        <div class="container-social">
+            <span>Redes Sociales</span>
+            <div class="container-buttons-socila">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
+    </div>
     </main>
+    <section class="productos-relacionados">
+        <h3>Productos relacionados</h3>
+        <div class="card-lista-productos">
+            <div class="card">
+                <div class="card.img">
+                    <img src="../img/producto-rela1.jpg" alt="Zapatillas Nike Oversize" class="img">
+                </div>
+                <div class="informacion-card">
+                    <div class="texto-de-producto">
+                        <h4>Zapatillas Nike Oversize</h4>
+                        <p class="categoria"></p>
+                    </div>
+                    <div class="precio">$25.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card.img">
+                    <img src="../img/producto-rela2.jpg" alt="Zapatillas Nike Marrones Clasicas" class="img">
+                </div>
+                <div class="informacion-card">
+                    <div class="texto-de-producto">
+                        <h4>Zapatillas Nike Marrones Clasicas</h4>
+                        <p class="categoria"></p>
+                    </div>
+                    <div class="precio">$22.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card.img">
+                    <img src="../img/producto-rela3.jpg" alt="Zapatillas Nike Marron" class="img">
+                </div>
+                <div class="informacion-card">
+                    <div class="texto-de-producto">
+                        <h4>Zapatillas Nike Marron</h4>
+                        <p class="categoria"></p>
+                    </div>
+                    <div class="precio">$25.000</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card.img">
+                    <img src="../img/producto-rela4.jpg" alt="Zapatillas Nike Air Max Toy Story" class="img">
+                </div>
+                <div class="informacion-card">
+                    <div class="texto-de-producto">
+                        <h4>Zapatillas Nike Air Max Toy Story</h4>
+                        <p class="categoria"></p>
+                    </div>
+                    <div class="precio">$28.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>Todos los derechos son reservados por copyright</p>
         <div class="redes">
