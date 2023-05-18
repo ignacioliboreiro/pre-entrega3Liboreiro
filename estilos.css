@@ -577,19 +577,74 @@ select {
   margin: 30px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .carrusel div img {
+    width: 250px;
+    height: 100vh;
+  }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .button-borders {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 75px;
+  }
+  form {
+    color: rgba(255, 249, 249, 0.968627451);
+    padding: 20px;
+    width: 300px;
+    background-color: rgba(51, 51, 51, 0.7019607843);
+    height: 500px;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .card-lista-productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    margin: 30px;
+  }
+  .main-zapatillas {
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+    flex-direction: column;
+  }
+  .main-pantalones {
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+    flex-direction: column;
+  }
+  .card-lista-productos-pantalon {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    margin: 30px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 759px) {
   .galeria-index {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
   }
   .nosotros {
     display: flex;
+    flex-direction: column;
   }
   .nleft {
     width: 50%;
   }
   .nright {
-    width: 50%;
+    width: 100%;
   }
   .modelo {
     padding-top: 30px;
@@ -602,7 +657,7 @@ select {
     flex-direction: row;
   }
   .carrusel div img {
-    width: 250px;
+    width: 100%;
     height: 100vh;
   }
   .main-contacto {
